@@ -1,0 +1,59 @@
+/* root global css   */
+
+/* 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Varela', sans-serif;
+
+ */
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+:root{
+    --gray:#444;
+    --red:#bd4b4b;
+    --white:#ffffff;
+    --light-bg:#f8f6f6;
+}
+
+body{
+font-family: 'Josefin Sans', sans-serif;
+
+} 
+
+.container{
+  width: 90%;
+  margin: 0  auto;
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+
+a{
+  text-decoration: none;
+}
+.btn { 
+    padding: 10px;
+    background: var(--red);
+    border: none;
+    outline: none;
+    color: var(--white);
+    text-transform: capitalize;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    line-height: 1;
+    display: inline-block;
+}
+
+
+.btn:hover{
+  background: #ce5555; 
+}

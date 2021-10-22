@@ -1,0 +1,92 @@
+.post_container {
+  flex: 10 1; 
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr );
+}
+
+.post_container .post {
+  position: relative;
+  margin: 10px;
+  box-shadow: 0 0 25px 9px rgb(0 0 0 / 7%);
+  font-family: "Varela", sans-serif;
+}
+
+.post .post_wrapper{
+  padding: 2px 2px 6px 2px
+}
+
+
+.post .btn_effect {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 2s linear ease-in-out;
+  opacity: 0;
+}
+
+.post:hover .btn_effect{
+  opacity: 1;
+  top: 30%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+}
+
+
+.post .post_img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.post .post_img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  /* -webkit-box-reflect: below 0 linear-gradient(transparent, white); */
+}
+ 
+
+
+.post .post_heading h2, span {
+  /* text-align: center; */
+  text-transform: capitalize;
+  display: block;
+  margin-left: 8px;
+}
+
+.post .post_caption span {
+  color: var(--gray);
+  text-transform: capitalize;
+  padding: 1px 0 4px 0;
+}
+
+
+.post .post_heading span {
+  color: var(--gray);
+}
+
+.post .post_desc p {
+  margin: 4px 8px;
+  color: var(--gray);
+  overflow: hidden;
+
+  line-height: 20px;
+  text-overflow: ellipsis;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.post  .post_wrapper .badges {
+  border-radius: 15px;
+  display: inline-block;
+  padding: 1px 20px;
+  line-height: 1.9;
+  margin: 6px;
+  color: var(--white);
+  background-color: var(--red);
+  box-shadow: 0 0 25px 9px rgba(0, 0, 0, 0.07);
+}

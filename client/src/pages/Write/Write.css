@@ -1,0 +1,94 @@
+.write {
+  margin-top: 60px;
+  position: relative;
+}
+
+.write .write_form {
+  position: relative;
+}
+.write .write_form_group .fileInputBorder {
+  border: 5px solid var(--gray);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: inline-block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.write #upload_post_img {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.write #upload_post_img .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  font-family: "Varela", sans-serif;
+}
+
+.write .write_form .write_form_group {
+  position: relative;
+}
+
+.write .write_form_group .addIcon {
+  font-size: 30px;
+  color: var(--gray);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.write .write_form_group .titleInput {
+  padding: 10px 20px;
+  width: 100%;
+  margin: 10px 0;
+  margin-left: 60px;
+  border: none;
+  font-family: "Varela", sans-serif;
+  font-size: 20px;
+
+  outline: none;
+}
+
+.write .write_form_group .titleInput::placeholder {
+  font-size: 20px;
+  font-family: "Varela", sans-serif;
+
+  text-transform: capitalize;
+}
+
+.write .write_form_group .descInput {
+  padding: 10px 20px;
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  margin: 20px 0 20px 60px;
+  font-family: "Varela", sans-serif;
+  font-size: 20px;
+}
+
+.write .write_form_group .descInput::placeholder {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: "Varela", sans-serif;
+}
+
+.write .publish_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.upload_post_img {
+  width: 100%;
+  height: 351px;
+  object-fit: cover;
+  border-radius: 10px;
+}

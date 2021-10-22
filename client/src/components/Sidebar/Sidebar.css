@@ -1,0 +1,111 @@
+
+.sidebar {
+    flex: 3 1; 
+    /* background: var(--light-bg); */
+    padding: 5px 20px;
+    box-shadow: 0 0 25px 9px rgba(0, 0, 0, 0.07);
+    height: max-content;
+}
+
+.sidebar .sidebar_item  img {
+    width: 45px;
+    height: 45px;
+    clip-path: circle();
+    object-fit: cover;
+}
+
+.sidebar .sidebar_item {
+    display: flex;
+}
+
+.sidebar  .sidebar_item_detail{
+    margin-left: 12px;
+}
+
+.sidebar  .sidebar_item_detail .sidebar_item_title{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 1px;
+    font-family: 'Varela', sans-serif;
+    display: inline-block;
+}
+
+.sidebar  .sidebar_item_detail .sidebar_item_lead{
+    font-weight: 600;
+}
+
+
+.sidebar .sidebar_item_category {
+    margin: 20px 0;
+}
+
+
+
+
+
+.sidebar  .sidebar_item_category .sidebar_item_title {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 4px 0;
+    font-family: 'Varela', sans-serif;
+   border-top: 1px solid var(--gray);
+   border-bottom: 1px solid var(--gray);
+   text-align: center;
+
+}
+.sidebar  .sidebar_item_group .group_item {
+
+    border-radius: 15px; 
+    display: inline-block;
+    padding: 5px 8px;
+    line-height: 1.9;
+    margin: 6px;
+    box-shadow:0 0 25px 9px rgba(0, 0, 0, 0.07);
+
+}
+
+
+
+
+
+.sidebar  .sidebar_item_social .sidebar_item_title {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 4px 0;
+    font-family: 'Varela', sans-serif;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    text-align: center;
+}
+.sidebar .sidebar_item_social .sidebar_item_group {
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.sidebar .sidebar_item_social .sidebar_item_group .fb{
+    background-color: #3b5998;
+    color: var(--white);
+}
+.sidebar .sidebar_item_social .sidebar_item_group .tw{
+    background-color: 	#1DA1F2;
+    color: var(--white);
+}
+.sidebar .sidebar_item_social .sidebar_item_group .ig{
+    background-color: 	#8a3ab9    ;
+    color: var(--white);
+}
+
+.sidebar .sidebar_item_social .sidebar_item_group .li{
+    background-color:#0e76a8 ;
+    color: var(--white);
+}
+
+.sidebar .sidebar_item_social .sidebar_item_group .pin{
+    background-color:#E60023;
+    color: var(--white);
+}
+
+

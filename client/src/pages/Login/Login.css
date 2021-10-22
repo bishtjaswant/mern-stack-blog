@@ -1,0 +1,69 @@
+.login {
+  margin-top: 60px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  overflow: hidden;
+  background: linear-gradient(
+      90deg,
+      rgba(212, 193, 110, 0.575),
+      rgba(200, 214, 73, 0.671)
+    ),
+    url(../../assets/images/login.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+
+.login .register_btn {
+  position: absolute;
+  top: 104px;
+  right: 108px;
+  width: 185px;
+}
+
+.login .login_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login_wrapper .title h1 {
+  font-size: 35px;
+  text-transform: capitalize;
+}
+
+.login_wrapper .group label {
+  font-size: 27px;
+  text-transform: capitalize;
+}
+
+.login_wrapper .group {
+  width: 35%;
+  margin: 10px 0;
+}
+
+.login_wrapper .group *::placeholder {
+  text-transform: capitalize;
+}
+
+
+.login_wrapper .group .control {
+  display: block;
+  padding: 10px 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+
+.login_button_disabled:disabled{
+  cursor: not-allowed;
+  border-color: #ff0000;
+}
