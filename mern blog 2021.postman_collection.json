@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "3ea7a38a-5931-4984-abe7-eebe4a56c440",
+		"name": "mern blog 2021",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"rahul\",\r\n    \"email\":\"rahul@gmail.com\",\r\n    \"password\":\"rahul\",\r\n    \"profilePic\":\"no.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{blog_url}}/auth/register",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\":\"jaswant@gmail.com\",\r\n    \"password\":\"jaswant\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{blog_url}}/auth/login",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "fetch user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{blog_url}}/user/all",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updating user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"616f9ac0c0d81c1c7dbd8e88\",\r\n    \"username\": \"bishtji_uttrakhhand\",\r\n   \"email\":\"bishtji@gmail.org\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{blog_url}}/user/update/616f9ac0c0d81c1c7dbd8e88",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"user",
+								"update",
+								"616f9ac0c0d81c1c7dbd8e88"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"616f9ac0c0d81c1c7dbd8e88\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{blog_url}}/user/delete/616f9ac0c0d81c1c7dbd8e88",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"user",
+								"delete",
+								"616f9ac0c0d81c1c7dbd8e88"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\":\"6172618d4f05dda30cce0118\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{blog_url}}/user/61725607257efdf3601a0484",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"user",
+								"61725607257efdf3601a0484"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "new post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"are  mere lifre  partner rajni\",\r\n    \"description\":\"ky baat h guru\",\r\n    \"categories\":[\"helll\"],\r\n    \"user\": \"616fa2a21be654ad447df595\",\r\n    \"postImage\":\"NO IMAGE  HERE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{blog_url}}/posts/create",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"posts",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetch post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{blog_url}}/posts/",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"posts",
+								""
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "post",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/posts/delete/616faa041ac66752d635aa9e",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"posts",
+								"delete",
+								"616faa041ac66752d635aa9e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update post",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"new title [cool]\",\r\n    \"description\":\"new title  description test [cool]\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{blog_url}}/posts/update/61725607257efdf3601a0484A",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"posts",
+								"update",
+								"61725607257efdf3601a0484A"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single post",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{blog_url}}/posts/61725607257efdf3601a0484",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"posts",
+								"61725607257efdf3601a0484"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "uploading file",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/jaswa/Pictures/Acer/Planet9_Wallpaper_5000x2813.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{blog_url}}/upload",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "add category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"name\":\"java stack\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{blog_url}}/category/create",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"category",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetch categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{blog_url}}/category/",
+							"host": [
+								"{{blog_url}}"
+							],
+							"path": [
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
